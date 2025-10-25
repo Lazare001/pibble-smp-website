@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.a3a5740e.js",
-    "index.html": "/index.html",
-    "main.a3a5740e.js.map": "/static/js/main.a3a5740e.js.map"
+    "main.css": "/pibble-smp-website/static/css/main.31d6cfe0.css",
+    "main.js": "/pibble-smp-website/static/js/main.e58e45ba.js",
+    "index.html": "/pibble-smp-website/index.html",
+    "main.e58e45ba.js.map": "/pibble-smp-website/static/js/main.e58e45ba.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.a3a5740e.js"
+    "static/js/main.e58e45ba.js"
   ]
 }
