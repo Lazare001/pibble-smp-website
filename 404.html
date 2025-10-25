@@ -16,19 +16,13 @@
       // with Internet Explorer (it is currently > 512 bytes)
 
       // If you're creating a Project Pages site and NOT using a custom domain,
-      // then set pathSegmentsToKeep to 0 (you don't need to keep any path
-      // segments). This script will redirect to the index.html file with
-      // the redirect path as a query parameter and hash fragment.
-      // For example, if your site is at https://username.github.io/repo-name/,
-      // and someone visits https://username.github.io/repo-name/one/two,
-      // they will be redirected to
-      // https://username.github.io/repo-name/?/one/two
-
-      // If you're using Router with history mode, you'll need to set
-      // pathSegmentsToKeep to 0. If you're using Router with hash mode,
-      // you'll need to set pathSegmentsToKeep to 1.
-
-      var pathSegmentsToKeep = 0;
+      // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
+      // This way the code will only replace the route part and not the real directory.
+      // For example, if your repository path is /my-repo/, and your GitHub Pages site
+      // is at https://username.github.io/my-repo/, then set pathSegmentsToKeep to 1.
+      // If your site is at https://username.github.io/, then set pathSegmentsToKeep to 0.
+      // For more info: https://github.com/rafgraph/spa-github-pages/tree/gh-pages#configuring-the-404-page
+      var pathSegmentsToKeep = 1;
 
       var l = window.location;
       l.replace(
