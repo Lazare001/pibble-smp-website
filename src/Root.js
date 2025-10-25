@@ -4,7 +4,7 @@ import App from "./App";
 
 export default function Root() {
   return (
-    <BrowserRouter basename="/pibble-smp-website">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <App />
     </BrowserRouter>
   );
